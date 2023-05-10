@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+}
+
+:root {
+    --green: #509E2F;
+    --light-green: #84BD00;
+    --lemon: #C4D600;
+    --gray: #D9D9D9;
+  }
+
+h1 {
+    color: var(--green);
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+h3 {
+    font-family: 'Montez';
+    font-size: 50px;
+    color: var(--light-green);
+}
+
+
+/* Stying for the main section goes from here */
+
+.container {
+    width: 60%;
+    margin: 15px auto;
+}
+
+.cusines-section, .diet-section, .bakery-section {
+    margin: 40px auto;
+}
+
+.cusines, .diet, .bakery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-card {
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 220px;
+    height: 197px;
+    border-radius: 5px;
+}
+
+.recipe-card .img-anchor:hover {
+    opacity: 0.5;
+}
+
+.recipe-card .title {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    max-width: 60%;
+}
+
+.recipe-card .title:hover {
+    color: #509E2F;
+}
+
+.recipe-card button {
+    background-color: var(--light-green);
+    padding: 3px 5px;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+
+}
+
+.recipe-card button:hover {
+    background-color: var(--green);
+    transition: all ease-in-out 0.5;
+
+}
+
+.title-section, .time-section, .social-section {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 10px;
+    padding: 0 3px 5px;
+}
+
+.star, .time-section,.social-section {
+    font-size: 10px;
+}
+
+@media screen and (max-width:600px) {
+    .cusines {
+        flex-direction: column;
+    }
+
+    .recipe-card {
+        margin-bottom: 20px;
+    }
+}
+
