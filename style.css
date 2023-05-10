@@ -28,9 +28,31 @@ h3 {
 }
 
 
-/* Stying for the main section goes from here */
 
-.container {
+/* CSS Variables code starts from here - Chisom and co */
+
+        /* Replace your code with this */
+
+/* CSS Variables code ends here --> */
+
+
+
+/* Navbar section code starts from here - Nofisat and co */
+
+        /* Replace your code with this */
+
+/* Navbar section ends here --> */
+
+
+/* Left Sidebar Section Code starts from here - Damilola and co */
+
+        /* Replace your code with this */
+
+/* Left Sidebar Section Code ends here */
+
+
+/* Center Main Section Code starts from here - Leo and co */
+.main-container {
     width: 60%;
     margin: 15px auto;
 }
@@ -112,4 +134,20 @@ h3 {
         margin-bottom: 20px;
     }
 }
+/* Center Main Section Code ends here */
+
+
+/* Right Sidebar image Code starts from here - Ibrahim and co */
+
+        /* Replace your code with this */
+
+/* Right Sidebar Section Code ends here */
+
+
+/* Footer section code starts from here - Ngozi and co */
+
+        /* Replace your code with this */
+
+/* Footer section ends here */
+
 
