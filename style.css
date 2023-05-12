@@ -1,153 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Montserrat&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat';
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
 :root {
-    --green: #509E2F;
-    --light-green: #84BD00;
-    --lemon: #C4D600;
-    --gray: #D9D9D9;
-  }
+  --green: #509e2f;
+  --light-green: #84bd00;
+  --lemon: #c4d600;
+  --gray: #d9d9d9;
+}
 
 h1 {
-    color: var(--green);
-    text-align: center;
-    font-family: 'Montserrat';
+  color: var(--green);
+  text-align: center;
+  font-family: "Montserrat";
 }
 
 h3 {
-    font-family: 'Montez';
-    font-size: 50px;
-    color: var(--light-green);
+  font-family: "Montez";
+  font-size: 50px;
+  color: var(--light-green);
 }
-
-
 
 /* CSS Variables code starts from here - Chisom and co */
 
-        /* Replace your code with this */
+/* importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+
+/* color pallete variables */
+:root {
+  --dark-green: #509e2f;
+  --lime-green: #84bd00;
+  --silver: #d9d9d9;
+  --silver-white: #f5f5f5;
+  --mustard-green: #c4d600;
+  --black: #000000;
+  --ash-white: #d0c5c5;
+  --white: #ffffff;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Montez", cursive;
+}
+
+.footer-icons {
+  background-color: #000000;
+}
 
 /* CSS Variables code ends here --> */
 
-
-
 /* Navbar section code starts from here - Nofisat and co */
 
-        /* Replace your code with this */
+/* Replace your code with this */
 
 /* Navbar section ends here --> */
 
-
 /* Left Sidebar Section Code starts from here - Damilola and co */
 
-        /* Replace your code with this */
+/* Replace your code with this */
 
 /* Left Sidebar Section Code ends here */
 
-
 /* Center Main Section Code starts from here - Leo and co */
 .main-container {
-    width: 60%;
-    margin: 15px auto;
+  width: 60%;
+  margin: 15px auto;
 }
 
-.cusines-section, .diet-section, .bakery-section {
-    margin: 40px auto;
+.cusines-section,
+.diet-section,
+.bakery-section {
+  margin: 40px auto;
 }
 
-.cusines, .diet, .bakery {
-    display: flex;
-    justify-content: space-between;
+.cusines,
+.diet,
+.bakery {
+  display: flex;
+  justify-content: space-between;
 }
 
 .recipe-card {
-    max-width: 220px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-card img {
-    width: 220px;
-    height: 197px;
-    border-radius: 5px;
+  width: 220px;
+  height: 197px;
+  border-radius: 5px;
 }
 
 .recipe-card .img-anchor:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .recipe-card .title {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    color: black;
-    max-width: 60%;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  max-width: 60%;
 }
 
 .recipe-card .title:hover {
-    color: #509E2F;
+  color: #509e2f;
 }
 
 .recipe-card button {
-    background-color: var(--light-green);
-    padding: 3px 5px;
-    border:none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 10px;
-    font-weight: 700;
-
+  background-color: var(--light-green);
+  padding: 3px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .recipe-card button:hover {
-    background-color: var(--green);
-    transition: all ease-in-out 0.5;
-
+  background-color: var(--green);
+  transition: all ease-in-out 0.5;
 }
 
-.title-section, .time-section, .social-section {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    margin-top: 10px;
-    padding: 0 3px 5px;
+.title-section,
+.time-section,
+.social-section {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  margin-top: 10px;
+  padding: 0 3px 5px;
 }
 
-.star, .time-section,.social-section {
-    font-size: 10px;
+.star,
+.time-section,
+.social-section {
+  font-size: 10px;
 }
 
-@media screen and (max-width:600px) {
-    .cusines {
-        flex-direction: column;
-    }
+@media screen and (max-width: 600px) {
+  .cusines {
+    flex-direction: column;
+  }
 
-    .recipe-card {
-        margin-bottom: 20px;
-    }
+  .recipe-card {
+    margin-bottom: 20px;
+  }
 }
 /* Center Main Section Code ends here */
 
-
 /* Right Sidebar image Code starts from here - Ibrahim and co */
 
-        /* Replace your code with this */
+/* Replace your code with this */
 
 /* Right Sidebar Section Code ends here */
 
-
 /* Footer section code starts from here - Ngozi and co */
 
-        /* Replace your code with this */
+/* Replace your code with this */
 
 /* Footer section ends here */
-
-
