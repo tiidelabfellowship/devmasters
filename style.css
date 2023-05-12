@@ -60,7 +60,59 @@ h3 {
 
 /* Left Sidebar Section Code starts from here - Damilola and co */
 
-/* Replace your code with this */
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat';
+}
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-family: 'Montserrat';
+}
+.Sidebar-section {
+    margin-left: 3%;
+}
+.Sidebar-section h2 {
+    font-family: 'Montez';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #84BD00;
+
+}
+ul li {
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+.recipe-list span {
+    font-size: 30px;
+    color: #84BD00;
+}
+.recipe-list .recipe-sublist {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.recipe-list span:hover {
+    background: rgb(34, 31, 31);
+    color: #84BD00;
+}
+
+
+
+
 
 /* Left Sidebar Section Code ends here */
 
