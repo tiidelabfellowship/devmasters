@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Recipe App</title>
 </head>
 <body>
@@ -22,15 +23,15 @@
 
         <!-- Hero Section Code ends here -->
 
-        <main>
+        <main class="main-section">
             <!-- Left Sidebar Section Code starts from here - Damilola and co -->
 
             <div class="Sidebar-section">
                 <h2>Filter Recipe</h2>
                 <ul class="recipe-list">
                     <li class="title">
-                        <span>Diet</span> 
-                        <ul class="recipe-sublist">
+                        <span onclick="sidebarDietHandle()">Diet <i class="fa fa-angle-down" aria-hidden="true"></i></span> 
+                        <ul class="recipe-sublist" id="diet">
                             <li>Dairy Free</li>
                             <li>Egg Free</li>
                             <li>Sugar Free</li>
@@ -38,8 +39,8 @@
                         </ul>
                     </li>
                     <li class="title">
-                        <span>Allergies</span>
-                        <ul class="recipe-sublist">
+                        <span onclick="sidebarAllegiesHandle()">Allergies <i class="fa fa-angle-down" aria-hidden="true"></i> </span>
+                        <ul class="recipe-sublist" id="allergies">
                             <li>Gluten</li>
                             <li>Legumes</li>
                             <li>Grain</li>
@@ -47,8 +48,8 @@
                         </ul>
                     </li>
                     <li class="title">
-                        <span>Cuisine</span>
-                        <ul class="recipe-sublist">
+                        <span onclick="sidebarCusinesHandle()">Cuisine <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <ul class="recipe-sublist" id="cuisine">
                             <li>Soups</li>
                             <li>Calabar</li>
                             <li>Yoruba</li>
@@ -57,8 +58,8 @@
                         </ul>
                     </li>
                     <li class="title">
-                        <span>Goals</span>
-                        <ul class="recipe-sublist">
+                        <span onclick="sidebarGoalHandle()">Goals <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <ul class="recipe-sublist" id="goal">
                             <li>Weightloss</li>
                             <li>Healthy Skin</li>
                             <li>health & Wellness</li>
@@ -72,7 +73,7 @@
 
             <!-- Center Main Section Code starts from here - Leo and co -->
             <div class="main-container">
-                <h1>Recipe App</h1>
+                <h2>Recipe Foods</h2>
                 
                 <!-- Cusines Section here -->
                 <section class="cusines-section">
@@ -83,7 +84,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -108,7 +109,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/egusi.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Egusi Soup $ Fufu</a>
                                     <button>Favorite</button>
@@ -133,7 +134,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -164,7 +165,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -189,7 +190,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -214,7 +215,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -245,7 +246,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -270,7 +271,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -295,7 +296,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -321,7 +322,7 @@
 
             <!-- Right Sidebar image Code starts from here - Ibrahim and co -->
 
-                    <!-- Replace your code with this -->
+            <img src="imgs/right-img.png" alt="" class="right-side-img">
 
             <!-- Right Sidebar Section Code ends here -->
         </main>
@@ -333,5 +334,7 @@
             <!-- Footer section ends here -->
         </footer>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

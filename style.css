@@ -1,36 +1,7 @@
+/* importing google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montez&family=Montserrat&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat";
-}
-
-:root {
-  --green: #509e2f;
-  --light-green: #84bd00;
-  --lemon: #c4d600;
-  --gray: #d9d9d9;
-}
-
-h1 {
-  color: var(--green);
-  text-align: center;
-  font-family: "Montserrat";
-}
-
-h3 {
-  font-family: "Montez";
-  font-size: 50px;
-  color: var(--light-green);
-}
-
 /* CSS Variables code starts from here - Chisom and co */
-
-/* importing google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
 
 /* color pallete variables */
 :root {
@@ -46,39 +17,38 @@ h3 {
   --secondary-font: "Montez", cursive;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
 .footer-icons {
   background-color: #000000;
 }
 
 /* CSS Variables code ends here --> */
 
+
 /* Navbar section code starts from here - Nofisat and co */
 
-/* Replace your code with this */
+      /* Replace your code with this */
 
 /* Navbar section ends here --> */
 
+
 /* Left Sidebar Section Code starts from here - Damilola and co */
 
-@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat&display=swap');
-
-
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Montserrat';
-}
 ul {
     list-style-type: none;
 }
 
-ul li {
-    font-family: 'Montserrat';
-}
 .Sidebar-section {
     margin-left: 3%;
+    width: 300px;
 }
+
 .Sidebar-section h2 {
     font-family: 'Montez';
     font-style: normal;
@@ -89,34 +59,40 @@ ul li {
     align-items: center;
     text-align: center;
     color: #84BD00;
+    margin-bottom: 20px;
+}
 
-}
-ul li {
-    font-family: 'Montserrat';
-    font-style: normal;
-}
 .recipe-list span {
     font-size: 30px;
     color: #84BD00;
+    cursor: pointer;
 }
+
 .recipe-list .recipe-sublist {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #000;
 }
+
 .recipe-list span:hover {
     background: rgb(34, 31, 31);
     color: #84BD00;
 }
 
-
-
-
+#diet, #cuisine {
+  display: none;
+}
 
 /* Left Sidebar Section Code ends here */
 
+
 /* Center Main Section Code starts from here - Leo and co */
+
+.main-section {
+  display: flex;
+}
+
 .main-container {
   width: 60%;
   margin: 15px auto;
@@ -166,7 +142,7 @@ ul li {
 }
 
 .recipe-card button {
-  background-color: var(--light-green);
+  background-color: var(--lime-green);
   padding: 3px 5px;
   border: none;
   cursor: pointer;
@@ -176,7 +152,7 @@ ul li {
 }
 
 .recipe-card button:hover {
-  background-color: var(--green);
+  background-color: var(--dark-green);
   transition: all ease-in-out 0.5;
 }
 
@@ -196,25 +172,53 @@ ul li {
   font-size: 10px;
 }
 
+.right-side-img {
+  width: 22%;
+  height: 30%;
+  margin-top: 15%;
+}
+
 @media screen and (max-width: 600px) {
-  .cusines {
+  .main-section {
+    width: 97%;
+  }
+  .cusines, .diet,
+  .bakery {
     flex-direction: column;
   }
 
   .recipe-card {
     margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .recipe-info {
+    width: 100%;
+  }
+
+  .Sidebar-section h2 {
+    font-size: 25px;
+  }
+
+  .recipe-list span {
+    font-size: 20px;
+  }
+
+  .right-side-img {
+    display: none;
   }
 }
 /* Center Main Section Code ends here */
 
 /* Right Sidebar image Code starts from here - Ibrahim and co */
 
-/* Replace your code with this */
+        /* Replace your code with this */
 
 /* Right Sidebar Section Code ends here */
 
+
 /* Footer section code starts from here - Ngozi and co */
 
-/* Replace your code with this */
+    /* Replace your code with this */
 
 /* Footer section ends here */
