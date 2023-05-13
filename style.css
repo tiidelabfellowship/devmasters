@@ -303,9 +303,53 @@ ul {
 /* Center Main Section Code ends here */
 
 /* Right Sidebar image Code starts from here - Ibrahim and co */
-
-        /* Replace your code with this */
-
+/* Hero section */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap');
+.hero{
+    background-image: url(/imgs/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    padding: 30px 0 0 30px;
+    color: #fff;
+}
+span{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.btn{
+    padding-left: 10px;
+    background-color: transparent;
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 100;
+    margin-left: 60px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+/* Right image */
+.right-image{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 300px;
+    height: 800px;
+    margin-left: 20px;
+    overflow: hidden;
+}
 /* Right Sidebar Section Code ends here */
 
 
