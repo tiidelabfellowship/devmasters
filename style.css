@@ -24,6 +24,10 @@
   font-family: var(--primary-font);
 }
 
+ul {
+  list-style-type: none;
+}
+
 .footer-icons {
   background-color: #000000;
 }
@@ -103,11 +107,11 @@ nav ul{
   align-items: center;
   /* padding: 15px; */
 }
-ul li{
+nav ul li{
   padding: 20px;
   list-style: none;
 }
-ul .active{
+nav ul .active{
   color: green;
 }
 @media screen and (max-width:900px) {
@@ -131,10 +135,6 @@ ul .active{
 
 
 /* Left Sidebar Section Code starts from here - Damilola and co */
-
-ul {
-    list-style-type: none;
-}
 
 .Sidebar-section {
     margin-left: 3%;
@@ -183,6 +183,8 @@ ul {
 
 .main-section {
   display: flex;
+  margin: 50px auto;
+
 }
 
 .main-container {
