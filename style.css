@@ -24,6 +24,10 @@
   font-family: var(--primary-font);
 }
 
+ul {
+  list-style-type: none;
+}
+
 .footer-icons {
   background-color: #000000;
 }
@@ -103,11 +107,11 @@ nav ul{
   align-items: center;
   /* padding: 15px; */
 }
-ul li{
+nav ul li{
   padding: 20px;
   list-style: none;
 }
-ul .active{
+nav ul .active{
   color: green;
 }
 @media screen and (max-width:900px) {
@@ -131,10 +135,6 @@ ul .active{
 
 
 /* Left Sidebar Section Code starts from here - Damilola and co */
-
-ul {
-    list-style-type: none;
-}
 
 .Sidebar-section {
     margin-left: 3%;
@@ -183,6 +183,8 @@ ul {
 
 .main-section {
   display: flex;
+  margin: 50px auto;
+
 }
 
 .main-container {
@@ -304,7 +306,6 @@ ul {
 
 /* Right Sidebar image Code starts from here - Ibrahim and co */
 /* Hero section */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap');
 .hero{
     background-image: url(/imgs/header-bg.png);
     background-size: cover;
@@ -354,7 +355,7 @@ span{
 
 
 /* Footer section code starts from here - Ngozi and co */
-section {
+footer {
   background-image: url(images/background-img.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -365,9 +366,10 @@ section {
   cursor: pointer;
   margin: 0 50px 0 50px;
   overflow: hidden;
+  width: 100%;
 }
 
-.container {
+.footer-container {
   background-color: #000000;
   color: #ffffff;
   opacity: 0.7;
@@ -378,16 +380,16 @@ section {
   justify-content: space-evenly;
 }
 
-.logo .newsletter {
+.footer-logo .newsletter {
   flex-direction: row;
 }
-.logo img {
+.footer-logo img {
   font-size: 12px;
   width: 150%;
   height: 72%;
 
 }
-.logo p {
+.footer-logo p {
   margin-top: -50px;
   padding-left: 50px;
 
@@ -407,7 +409,7 @@ section {
 
 }
 
-.write-up .header {
+.write-up .footer-header {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 20px;
