@@ -53,7 +53,7 @@ header{
   /* border: 2px solid red; */
   width: 80px;
   height: 80px;
-} 
+}
 .logo img{
   width: 100%;
   height: 100%;
@@ -71,7 +71,7 @@ header{
    background-color: #f5f5f5;
    width: 65%;
    outline: none;
-   
+
 }
 .search-input select{
   padding: 12px 3px;
@@ -354,7 +354,118 @@ span{
 
 
 /* Footer section code starts from here - Ngozi and co */
+section {
+  background-image: url(images/background-img.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1250px 300px;
+  background-attachment: fixed;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 50px 0 50px;
+  overflow: hidden;
+}
 
-    /* Replace your code with this */
+.container {
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.7;
+  width: auto;
+  height: 200px;
+  margin-top: 130px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo .newsletter {
+  flex-direction: row;
+}
+.logo img {
+  font-size: 12px;
+  width: 150%;
+  height: 72%;
+
+}
+.logo p {
+  margin-top: -50px;
+  padding-left: 50px;
+
+}
+.write-up {
+  flex-direction: row;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.write-up ul li {
+  list-style: none;
+  margin-bottom: 3px;
+
+}
+
+.write-up .header {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.fa {
+  position: absolute;
+  right: 155px;
+
+}
+.newsletter {
+  margin-top: 30px;
+}
+.newsletter h1 {
+  font-family: "Montez", cursive;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+.icon {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+
+}
+
+.input-group {
+  margin-bottom: 1rem;
+
+}
+
+.input-group-text {
+  background-color: #fff;
+  border: none;
+}
+
+
+.form-control {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+input[type="email"] {
+  width: 150%;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  display: flex;
+
+}
+
+.input-group-text i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+
+}
+
 
 /* Footer section ends here */
