@@ -1,153 +1,808 @@
-@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat';
-
-}
-
-:root {
-    --green: #509E2F;
-    --light-green: #84BD00;
-    --lemon: #C4D600;
-    --gray: #D9D9D9;
-  }
-
-h1 {
-    color: var(--green);
-    text-align: center;
-    font-family: 'Montserrat';
-}
-
-h3 {
-    font-family: 'Montez';
-    font-size: 50px;
-    color: var(--light-green);
-}
-
-
+/* importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Montserrat&display=swap");
 
 /* CSS Variables code starts from here - Chisom and co */
 
-        /* Replace your code with this */
+/* color pallete variables */
+:root {
+  --dark-green: #509e2f;
+  --lime-green: #84bd00;
+  --silver: #d9d9d9;
+  --silver-white: #f5f5f5;
+  --mustard-green: #c4d600;
+  --black: #000000;
+  --ash-white: #d0c5c5;
+  --white: #ffffff;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Montez", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+}
 
 /* CSS Variables code ends here --> */
 
 
-
 /* Navbar section code starts from here - Nofisat and co */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 90%;
+  gap: 30px;
+  /* border: 2px solid red; */
+  /* padding: 0.8rem 0; */
+}
+.burger-logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burger i{
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+.burger-logo .burger {
+  display: none;
+}
+ /* .logo{
+  width: 100px;
+  height: 100px;
+} */
+.logo img{
+  width: 25%;
+  height: 20%;
+}
+.search-input{
+  /* border: 2px solid blue; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.search-input input{
+   padding:12px 5px;
+   padding-right: 35px;
+   border: none;
+   background-color: #f5f5f5;
+   /* width: 65%; */
+   outline: none;
 
-        /* Replace your code with this */
+}
+.search-input select{
+  padding: 12px 3px;
+  border: none;
+  border-right: 2px solid #a19d9d;
+  width: 35%;
+  background-color: #f5f5f5;
+  outline: none;
+}
+.btn{
+  background-color: green;
+  padding: 10px;
+}
+.btn i{
+  color:white;
+}
+nav{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  /* padding: 10px 0; */
+}
+nav ul{
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 15px; */
+}
+nav ul li{
+  padding: 20px;
+  list-style: none;
+}
+nav ul .active{
+  color: green;
+}
+@media screen and (max-width:900px) {
+  .search-input{
+      display: none;
+  }
+  nav{
+      display: none;
+  }
+  .burger-logo{
+      border: solid 2px red;
+      width: 80%;
+  }
 
+  .burger-logo .burger {
+    display: block;
+  }
+  /* .logo {
+      flex: 1;
+  } */
+}
 /* Navbar section ends here --> */
 
 
 /* Left Sidebar Section Code starts from here - Damilola and co */
 
-        /* Replace your code with this */
+.Sidebar-section {
+    padding: 0 20px;
+    width: 300px;
+}
+
+.Sidebar-section h2 {
+    font-family: 'Montez';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #84BD00;
+    margin-bottom: 20px;
+}
+
+.recipe-list span {
+    font-size: 20px;
+    color: #84BD00;
+    cursor: pointer;
+}
+
+.recipe-list .recipe-sublist {
+    margin: 10px 0 10px 10px;
+    color: #000;
+}
+
+.recipe-list span:hover {
+    background: rgb(34, 31, 31);
+    color: #84BD00;
+}
+
+#diet, #cuisine {
+  display: none;
+}
 
 /* Left Sidebar Section Code ends here */
 
 
 /* Center Main Section Code starts from here - Leo and co */
+
+.main-section {
+  display: flex;
+  margin: 30px auto;
+
+}
+
 .main-container {
-    width: 60%;
-    margin: 15px auto;
+  width: 60%;
+  margin: 15px auto;
 }
 
-.cusines-section, .diet-section, .bakery-section {
-    margin: 40px auto;
+.cusines-section,
+.diet-section,
+.bakery-section {
+  margin: 40px auto;
 }
 
-.cusines, .diet, .bakery {
-    display: flex;
-    justify-content: space-between;
+.cusines,
+.diet,
+.bakery {
+  display: flex;
+  justify-content: space-between;
 }
 
 .recipe-card {
-    max-width: 220px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-card img {
-    width: 220px;
-    height: 197px;
-    border-radius: 5px;
+  width: 220px;
+  height: 197px;
+  border-radius: 5px;
 }
 
 .recipe-card .img-anchor:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .recipe-card .title {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    color: black;
-    max-width: 60%;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  max-width: 60%;
 }
 
 .recipe-card .title:hover {
-    color: #509E2F;
+  color: #509e2f;
 }
 
 .recipe-card button {
-    background-color: var(--light-green);
-    padding: 3px 5px;
-    border:none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 10px;
-    font-weight: 700;
-
+  background-color: var(--lime-green);
+  padding: 3px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .recipe-card button:hover {
-    background-color: var(--green);
-    transition: all ease-in-out 0.5;
-
+  background-color: var(--dark-green);
+  transition: all ease-in-out 0.5;
 }
 
-.title-section, .time-section, .social-section {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    margin-top: 10px;
-    padding: 0 3px 5px;
+.title-section,
+.time-section,
+.social-section {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  margin-top: 10px;
+  padding: 0 3px 5px;
 }
 
-.star, .time-section,.social-section {
+.star,
+.time-section,
+.social-section {
+  font-size: 10px;
+}
+
+.right-side-img {
+  width: 22%;
+  height: 30%;
+  margin-top: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  .main-section {
+    width: 97%;
+  }
+  .cusines, .diet,
+  .bakery {
+    flex-direction: column;
+  }
+
+  .recipe-card {
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 200px;
+  }
+
+  .recipe-card img {
+    width: 200px;
+  }
+  .recipe-info .title {
     font-size: 10px;
+  }
+
+  .recipe-info {
+    width: 100%;
+  }
+
+  .Sidebar-section {
+    padding: 0 5px;
+    width: 150px;
 }
 
-@media screen and (max-width:600px) {
-    .cusines {
-        flex-direction: column;
-    }
+  .Sidebar-section h2 {
+    font-size: 25px;
+  }
 
-    .recipe-card {
-        margin-bottom: 20px;
-    }
+  .recipe-list span {
+    font-size: 20px;
+  }
+
+  .recipe-list ul li {
+    font-size: 12px;
+  }
+
+  .right-side-img {
+    display: none;
+  }
+
+  .footer-container, .write-up {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 80%;
+  }
+
+  .footer-logo p {
+    text-align: left;
+  }
 }
 /* Center Main Section Code ends here */
 
-
 /* Right Sidebar image Code starts from here - Ibrahim and co */
+/* Hero section */
+.hero-section{
+    /* background-image: url(/imgs/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.slideshow-container h1{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    padding: 30px 0 0 30px;
+    color: #fff;
+}
+.slideshow-container span{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.slideshow-container .btn{
+    padding-left: 10px;
+    background-color: transparent;
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 100;
+    margin-left: 60px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.mySlides {display: none;}
+.slideshow-container img {vertical-align: middle;
+      opacity: 0.8;}
 
-        /* Replace your code with this */
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Caption text */
+.ctext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
 
 /* Right Sidebar Section Code ends here */
 
 
 /* Footer section code starts from here - Ngozi and co */
+.footer-section {
+  background-image: url(imgs/footer-bg-img.svg);
 
-        /* Replace your code with this */
+  /* background-image: url(images/background-img.jpg);
+  background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+  /* background-size: 1250px 300px; */
+  /* background-attachment: fixed; */
+  /* padding: 10px;
+  cursor: pointer; */
+  /* margin: 0 50px 0 50px; */
+  /* overflow: hidden; */
+  /* width: 100%; */
+}
+
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+  /* background-color: #000000; */
+  color: #ffffff;
+  /* opacity: 0.7; */
+  /* width: auto; */
+  /* height: 200px; */
+  /* margin-top: 130px; */
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.footer-logo {
+  width: 20%;
+}
+
+.footer-logo .newsletter {
+  flex-direction: row;
+}
+.footer-logo img {
+  width: 100%;
+  /* height: 72%; */
+}
+.footer-logo p {
+  text-align: center;
+  margin-top: -40px;
+}
+.write-up {
+  /* flex-direction: row; */
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.write-up ul li {
+  list-style: none;
+  margin-bottom: 3px;
+
+}
+
+.write-up .footer-header {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .fa {
+  position: absolute;
+  right: 155px;
+
+}
+.newsletter {
+  margin-top: 30px;
+}
+.newsletter h1 {
+  font-family: "Montez", cursive;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+footer .icon {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+  font-weight: 900;
+
+}
+
+.input-group {
+  margin-bottom: 1rem;
+
+}
+
+.input-group-text {
+  background-color: #fff;
+  border: none;
+}
+
+
+.form-control {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+input[type="email"] {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  display: flex;
+
+}
+
+.input-group-text i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+
+}
+
+@media screen and (max-width: 600px) {
+  
+  .footer-container, .write-up {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
 
 /* Footer section ends here */
+
+/* login styling sarts here */
+
+.contast{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #d9d9d9;
+  column-gap: 30px;
+}
+.form{
+  position: absolute;
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+}
+.form.signup{
+  opacity: 0;
+  pointer-events: none;
+}
+.formsy.show-signup .form.signup{
+  opacity: 1;
+  pointer-events: auto;
+}
+.formsy.show-signup .form.login{
+  opacity: 0;
+  pointer-events: none;
+}
+.login-header{
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #232836;
+}
+form{
+  margin-top: 30px;
+}
+.form .field{
+  height: 45px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 6px;
+}
+.field input,
+.field button{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.field input{
+outline: none;
+padding: 0 15px;
+border: 1px solid #cacaca;
+}
+.field input:focus{
+  border: bottom width 2px ;
+}
+.eye-icon{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #8b8b8b;
+  cursor: pointer;
+  padding: 5px;
+}
+.field button{
+  color: #fff;
+  background-color: #509e2f;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.field button:hover{
+  background-color: #84bd00;
+}
+
+.form-link{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.field input{
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid #cacaca;
+}
+
+.form-link span,
+.form-link a{
+font-size: 14px;
+font-weight: 400;
+color: #232836;
+}
+.form a{
+  color:  #84bd00;
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+
+.line{
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+}
+.line::before{
+  content: 'Or';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #232836;
+  padding: 0 15px;
+}
+.form.signup > div:nth-child(3),
+.form.login > div:nth-child(3){
+  background-color: #509e2f;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.form.signup > div:nth-child(3) > a > i,
+.form.login > div:nth-child(3) > a > i{
+color: #0171d3;
+font-size: 25px;
+}
+.media-options a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+a.facebook{
+  /* background-color:#0a158d ; */
+  color: #fff;
+  width: 100%;
+}
+
+.form.login > div:nth-child(4) > a > span,
+.form.signup > div:nth-child(4) > a > span
+{
+  text-align: center;
+  padding-left: 55px;
+  padding-bottom: -20px;
+}
+.form.signup > div:nth-child(3) > a > span,
+.form.login> div:nth-child(3) > a > span{
+  text-align: center;
+  padding-left: 75px;
+}
+a.facebook .facebook-icon{
+  height: 28px;
+  width: 28px;
+  color: #0171d3;
+  background-color: #fff;
+  font-size: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facebook-icon
+{
+  position:relative;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+
+img.google-png{
+  position:relative;
+  bottom: 20%;
+  left: -18.6px;
+  transform: translateY(32%);
+}
+.img.google-png{
+  height: 5px;
+  width: 5px;
+  object-fit: cover;
+}
+.form.login > div:nth-child(4),
+.form.signup > div:nth-child(4)
+{
+  margin-top:15px;
+  /* background-color: #509e2f; */
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 6px;
+      width: 100%;
+      border: 1px solid #cacaca;
+      
+}
+a.google{
+  /* border: 1px solid #cacaca; */
+  margin-top:15px;
+
+  font-size: 18px;
+  padding: 10px;
+  
+}
+a.google span{
+  font-weight: 500;
+  opacity: 0.6;
+  color: #232836;
+}
+
+
+/* login stylin ends here */
 
 

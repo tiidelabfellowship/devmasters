@@ -4,35 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/meal recipe footer logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Recipe App</title>
 </head>
 <body>
     <div class="container">
         <!-- Navbar section code starts from here - Nofisat and co -->
 
-                <!-- Replace your code with this -->
+        <header>
+            <div class="burger-logo">
+                <span class="burger">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <div class="logo">
+                    <img src="./imgs/meal master logo.png" alt="recipe logo">
+                </div>
+            </div>
+
+            <div class="search-input">
+                <select name="cars" id="cars">
+                    <option value="all categories">All Categories</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="low carb">Low Carb</option>
+                    <option value="diary free">Diary Free</option>
+                  </select>
+                <input type="text" placeholder="Search for recipes...">
+                <div class="btn">
+                    <a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="active">Home</li>
+                    <li><a href="login.html" target="_blank">Login</a></li>
+                    <!-- <li>SignUp</li> -->
+                </ul>
+                <div>
+                    <img src="./imgs/cook.png" alt="avartar">
+                </div>
+            </nav>
+        </header>
 
         <!-- Navbar section ends here -->
 
 
         <!-- Hero Section Code starts from here - Ibrahim and co -->
 
-                <!-- Replace your code with this -->
+        <div class="hero-sectio">
+            <div>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="./imgs/crooped.png" style="width:100%">
+                      <div class="ctext"> <h1>Delicious <span>Meal</span> </h1>
+                      <button class="btn">More</button></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="./imgs/combo.png" style="width:100%">
+                      <div class="ctext"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="./imgs/riceplan.png" style="width:100%">
+                      <div class="ctext"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="./imgs/perfect.png" style="width:100%">
+                      <div class="ctext"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="./imgs/goodie.png" style="width:100%">
+                      <div class="ctext"></div>
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                 <!-- <h1>Delicious <span>Meal</span> </h1>
+                <button class="btn">More</button> -->
+            </div>
+        </div>
 
         <!-- Hero Section Code ends here -->
 
-        <main>
+        <main class="main-section">
             <!-- Left Sidebar Section Code starts from here - Damilola and co -->
 
-                    <!-- Replace your code with this -->
+            <div class="Sidebar-section">
+                <h2>Filter Recipe</h2>
+                <ul class="recipe-list">
+                    <li class="title">
+                        <span onclick="sidebarDietHandle()">Diet <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <ul class="recipe-sublist" id="diet">
+                            <li>Dairy Free</li>
+                            <li>Egg Free</li>
+                            <li>Sugar Free</li>
+                            <li>Gluten Free</li>
+                        </ul>
+                    </li>
+                    <li class="title">
+                        <span onclick="sidebarAllegiesHandle()">Allergies <i class="fa fa-angle-down" aria-hidden="true"></i> </span>
+                        <ul class="recipe-sublist" id="allergies">
+                            <li>Gluten</li>
+                            <li>Legumes</li>
+                            <li>Grain</li>
+                            <li>Fruit</li>
+                        </ul>
+                    </li>
+                    <li class="title">
+                        <span onclick="sidebarCusinesHandle()">Cuisine <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <ul class="recipe-sublist" id="cuisine">
+                            <li>Soups</li>
+                            <li>Calabar</li>
+                            <li>Yoruba</li>
+                            <li>Igbo</li>
+                            <li>Hausa</li>
+                        </ul>
+                    </li>
+                    <li class="title">
+                        <span onclick="sidebarGoalHandle()">Goals <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <ul class="recipe-sublist" id="goal">
+                            <li>Weightloss</li>
+                            <li>Healthy Skin</li>
+                            <li>health & Wellness</li>
+                            <li>Nourishment</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
             <!-- Left Sidebar Section Code ends here -->
 
             <!-- Center Main Section Code starts from here - Leo and co -->
             <div class="main-container">
-                <h1>Recipe App</h1>
-                
+                <h2>Recipe Foods</h2>
+
                 <!-- Cusines Section here -->
                 <section class="cusines-section">
                     <h3>Cusines</h3>
@@ -42,7 +171,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -58,7 +187,7 @@
                                     </div>
                                     <span class="star">⭐⭐⭐⭐⭐</span>
                                 </div>
-                                
+
                             </div>
                         </div>
 
@@ -67,7 +196,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/egusi.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Egusi Soup $ Fufu</a>
                                     <button>Favorite</button>
@@ -83,16 +212,16 @@
                                     </div>
                                     <span class="star">⭐⭐⭐⭐⭐</span>
                                 </div>
-                                
+
                             </div>
                         </div>
-            
+
                         <!-- Third Card -->
                         <div class="recipe-card">
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -108,7 +237,7 @@
                                     </div>
                                     <span class="star">⭐⭐⭐⭐⭐</span>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -123,7 +252,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -139,7 +268,7 @@
                                     </div>
                                     <span class="star">⭐⭐⭐⭐⭐</span>
                                 </div>
-                                
+
                             </div>
                         </div>
 
@@ -148,7 +277,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -164,16 +293,16 @@
                                     </div>
                                     <span class="star">⭐⭐⭐⭐⭐</span>
                                 </div>
-                                
+
                             </div>
                         </div>
-            
+
                         <!-- Third Card -->
                         <div class="recipe-card">
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -189,7 +318,7 @@
                                     </div>
                                     <span class="star">⭐⭐⭐⭐⭐</span>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -204,7 +333,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -220,7 +349,7 @@
                                     </div>
                                     <span class="star">⭐⭐⭐⭐⭐</span>
                                 </div>
-                                
+
                             </div>
                         </div>
 
@@ -229,7 +358,7 @@
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -245,16 +374,16 @@
                                     </div>
                                     <span class="star">⭐⭐⭐⭐⭐</span>
                                 </div>
-                                
+
                             </div>
                         </div>
-            
+
                         <!-- Third Card -->
                         <div class="recipe-card">
                             <a href="#" class="img-anchor" title="View Details">
                                 <img src="imgs/dish.jpg" alt="dish">
                             </a>
-                            <div>
+                            <div class="recipe-info">
                                 <div class="title-section">
                                     <a href="#" class="title">Rice and Chicken</a>
                                     <button>Favorite</button>
@@ -265,12 +394,12 @@
                                 </div>
                                 <div class="social-section">
                                     <div class="social">
-                                        <span>✉️ 90</span>
+                                        <span>✉️ 80</span>
                                         <span>👍 100</span>
                                     </div>
                                     <span class="star">⭐⭐⭐⭐⭐</span>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -280,17 +409,79 @@
 
             <!-- Right Sidebar image Code starts from here - Ibrahim and co -->
 
-                    <!-- Replace your code with this -->
-
+            <!-- picture display -->
+            <img src="imgs/right-img.png" alt="" class="right-side-img">
+            
             <!-- Right Sidebar Section Code ends here -->
         </main>
-        <footer>
             <!-- Footer section code starts from here - Ngozi and co -->
 
-                <!-- Replace your code with this -->
+            <footer class="footer-section">
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="imgs/meal recipe footer logo.png" alt="">
+                        <p>All Rights Reserved</p>
+                    </div>
 
+                    <div class="write-up">
+                        <div class="footer-recipe">
+
+                            <ul>
+                                <li class="footer-header">Fresh Recipe</li>
+                                <li>Recipes</li>
+                                <li>Winter salads</li>
+                                <li>Organic chicken</li>
+                                <li>Beef and Mutton</li>
+                                <li>Flavoured Milk</li>
+                            </ul>
+                        </div>
+                        <div class="news">
+
+                            <ul>
+                                <li class="footer-header">In News</li>
+                                <li>Our Blogs</li>
+                                <li>Contests/Sweepsatkes</li>
+                                <li>Video</li>
+                                <li>New Releases</li>
+                                <li>Newsletter</li>
+                            </ul>
+                        </div>
+                        <div class="footer-about">
+                            <ul>
+                                <li class="footer-header">About Us</li>
+                                <li>FAQ</li>
+                                <li>Our Board</li>
+                                <li>Our Staff</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="newsletter">
+                        <h1>Join Our Newsletter</h1>
+                          <form>
+                            <div class="input-group">
+                              <!-- <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                              </div> -->
+                              <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                          </form>
+
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                          </div>
+                    </div>
+                </div>
+            </footer>
             <!-- Footer section ends here -->
         </footer>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
