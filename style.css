@@ -115,8 +115,14 @@ nav ul li{
   padding: 20px;
   list-style: none;
 }
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+} 
 nav ul .active{
   color: green;
+  background-color: white;
 }
 @media screen and (max-width:900px) {
   .search-input{
@@ -200,6 +206,15 @@ nav ul .active{
 .diet-section,
 .bakery-section {
   margin: 40px auto;
+}
+
+.cusines-section h3,
+.diet-section h3,
+.bakery-section h3 {
+  font-family: var(--secondary-font);
+  color:#84bd00;
+  font-size: 40px;
+
 }
 
 .cusines,
@@ -421,7 +436,7 @@ nav ul .active{
 }
 
 .active {
-  background-color: #717171;
+  background-color: #509e2f;
 }
 
 /* Fading animation */
