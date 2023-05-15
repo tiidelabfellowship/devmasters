@@ -97,6 +97,7 @@ links.forEach(link => {
 
 // login javscript ends here
 
+
 /* dietary script */
 
 function myFunction() {
