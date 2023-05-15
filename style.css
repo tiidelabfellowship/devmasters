@@ -617,7 +617,7 @@ input[type="email"] {
   border-radius: 6px;
   background: #fff;
 }
-.form.signup{
+/* .form.signup{
   opacity: 0;
   pointer-events: none;
 }
@@ -628,7 +628,7 @@ input[type="email"] {
 .formsy.show-signup .form.login{
   opacity: 0;
   pointer-events: none;
-}
+} */
 .login-header{
   font-size: 28px;
   font-weight: 600;
