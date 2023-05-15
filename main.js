@@ -129,3 +129,12 @@ function myFunction() {
       x.style.display = "none";
     }
   }
+
+  // Open Dietary Category
+
+  document.getElementById("categories").onchange = function() {
+    if(this.selectedIndex!==0) {
+        var win=window.open(this.value, '_blank');
+        win.focus();
+    }        
+ };
