@@ -90,11 +90,13 @@ pwShowHide.forEach(eyeIcon =>{
 links.forEach(link => {
     link.addEventListener("click", e => {
         e.preventDefault();// prevent form SubmitEvent
+        console.log(forms.classList);
         forms.classList.toggle("show-signup");
     })
 })
 
 // login javscript ends here
+
 
 /* dietary script */
 
