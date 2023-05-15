@@ -51,14 +51,14 @@ function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {slideIndex = 1}
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
@@ -84,7 +84,7 @@ pwShowHide.forEach(eyeIcon =>{
             eyeIcon.classList.replace("bx-hide","bx-hide");
         })
     })
-   
+
 })
 
 links.forEach(link => {
@@ -96,4 +96,34 @@ links.forEach(link => {
 
 // login javscript ends here
 
+/* dietary script */
 
+function myFunction() {
+    var x = document.getElementById("content");
+    if (x.style.display === "none") {
+        x.style.height="400px"
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function myOat() {
+    var x = document.getElementById("oat");
+    if (x.style.display === "none") {
+        x.style.height="400px"
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function myPlantain() {
+    var x = document.getElementById("plantain");
+    if (x.style.display === "none") {
+        x.style.height="400px"
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
